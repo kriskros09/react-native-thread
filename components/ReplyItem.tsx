@@ -1,4 +1,3 @@
-import React from "react";
 import { View } from "react-native";
 import { Reply } from "../types/threads";
 import { Text } from "./Themed";

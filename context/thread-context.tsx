@@ -1,8 +1,8 @@
-import React, { useEffect, useState, PropsWithChildren } from "react";
+import { useEffect, useState, PropsWithChildren, createContext } from "react";
 import { Thread } from "../types/threads";
 import { generateThreads } from "../utils/generate-dommy-data";
 
-export const ThreadContext = React.createContext<Thread[]>([]);
+export const ThreadContext = createContext<Thread[]>([]);
 
 export const ThreadProvdier = ({
 	children,

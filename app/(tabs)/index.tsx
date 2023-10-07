@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useRef, useContext, useEffect } from "react";
 import {
 	Platform,
 	RefreshControl,
@@ -11,10 +11,10 @@ import { ThreadContext } from "../../context/thread-context";
 import ThreadItem from "../../components/ThreadItem";
 
 export default function TabOneScreen() {
-	const animationRef = React.useRef<Lottie>(null);
-	const threads = React.useContext(ThreadContext);
+	const animationRef = useRef<Lottie>(null);
+	const threads = useContext(ThreadContext);
 
-	React.useEffect(() => {
+	useEffect(() => {
 		animationRef.current?.play();
 	}, []);
 

@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import { useRoute } from "@react-navigation/native";
 import { Reply, Thread } from "../types/threads";
 import ThreadItem, { blurhash } from "../components/ThreadItem";
@@ -11,7 +11,6 @@ import {
 	View,
 } from "react-native";
 import ReplyItem from "../components/ReplyItem";
-import { useState } from "react";
 import { createRandomFollower } from "../utils/generate-dommy-data";
 import { Image } from "expo-image";
 

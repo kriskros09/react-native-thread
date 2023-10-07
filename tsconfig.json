@@ -1,8 +1,19 @@
 {
 	"extends": "expo/tsconfig.base",
 	"compilerOptions": {
-		"jsx": "react",
-		"strict": true
+		"jsx": "react-jsx",
+		"strict": true,
+		"baseUrl": "./"
+		// "paths": {
+		// 	"@components/*": ["components/*"],
+		// 	"@contexts/*": ["contexts/*"],
+		// 	"@hooks/*": ["hooks/*"],
+		// 	"@constants/*": ["constants/*"],
+		// 	"@types/*": ["types/*"],
+		// 	"@utils/*": ["utils/*"],
+		// 	"@assets/*": ["assets/*"],
+		// 	"@lottie-animations/*": ["lottie-animations/*"]
+		// }
 	},
 	"include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import { Pressable, StyleSheet, View, useColorScheme } from "react-native";
 import { Thread } from "../types/threads";
 import { Image } from "expo-image";

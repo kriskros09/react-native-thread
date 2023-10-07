@@ -1,9 +1,9 @@
-import React from "react";
+import { ComponentProps } from "react";
 import { Link } from "expo-router";
 import * as WebBrowser from "expo-web-browser";
 import { Platform } from "react-native";
 
-export function ExternalLink(props: React.ComponentProps<typeof Link>) {
+export function ExternalLink(props: ComponentProps<typeof Link>) {
 	return (
 		<Link
 			hrefAttrs={{
